@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="1.css">
+
+  <script src="https://kit.fontawesome.com/61db2e53ef.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+
+      <nav>
+
+        <!-- <img src="crop.jpg" alt=""> -->
+
+          <h4 class="logo">SUCHITA</h4>
+
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Certifications</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+        </ul>
+
+        <i class="fa-solid fa-bars " onclick="openmenu()"></i>
+
+      </nav>
+
+      <div class="header-text">
+        <p></p>
+        <h1>Hi I am <span>Suchita </span> <br>from india </h1>
+        <div class="headerimg">
+
+          <img src="photo.jpg" alt="">
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!--about-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="about-col-1">
+          <img src="photo.jpg" alt="">
+        </div> -->
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am Suchita Mishra. I am persuing Bachelor of Technology in Computer Science and Engineering from ABES engineering college.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>c++</span> <br> DSA and problem solving</li>
+              <li><span>SQL</span><br>structured querry language</li>
+              <li><span>DBMS</span><br>Database management system</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Bachelor of Technology(CSE)</span> <br> 2020-2024</li>
+              <li><span>Intermediate</span><br>2019</li>
+              <li><span>Secondary</span><br>2017</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!--services-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Certificates</h1>
+      <div class="services-list">
+        <div>
+          <!-- <i class="fa-solid fa-computer-classic"></i> -->
+          <h2> Programming and DSA in python from NPTEL</h2>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis sequi debitis aperiam, nostrum mollitia quaerat amet nam nemo voluptate, deleniti consequuntur consequatur quidem laborum facere aliquam non libero.</p> -->
+          <a href="https://drive.google.com/file/d/1K395mPVarvrzM4tKloqJMYgrGdOUBLD5/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+        </div>
+        <div>
+          <!-- <i class="fa-solid fa-crop"></i> -->
+          <h2> Python certificate from IIT Kharagpur</h2>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis sequi debitis aperiam, nostrum mollitia quaerat amet nam nemo voluptate, deleniti consequuntur consequatur quidem laborum facere aliquam non libero.</p> -->
+          <a href="https://drive.google.com/file/d/1IKja5txFguCBG91meiDSA1DI7c5ZCA93/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+        </div>
+        <div>
+          <!-- <i class="fa-brands fa-app-store"></i> -->
+          <h2> Data Science for engineers</h2>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis sequi debitis aperiam, nostrum mollitia quaerat amet nam nemo voluptate, deleniti consequuntur consequatur quidem laborum facere aliquam non libero.</p> -->
+          <a href="https://drive.google.com/file/d/1p2G_aRvCoqgduik7HhqBGeOt4qZlRUCu/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+        </div>
+        <div>
+          <!-- <i class="fa-brands fa-app-store"></i> -->
+          <h2>  SQL (basic) from HackerRank</h2>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at officiis sequi debitis aperiam, nostrum mollitia quaerat amet nam nemo voluptate, deleniti consequuntur consequatur quidem laborum facere aliquam non libero.</p> -->
+          <a href=""><i class="fa-solid fa-link"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--portfolio-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="music.avif" alt="">
+          <div class="layer">
+            <h3>Music recommendation system</h3>
+            <p>This is a content based music recommender system which recommend the songs without any intervention</p>
+            <a href="https://github.com/mishra-suchita/content-based-music-recommender"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="emotion.gif" alt="">
+          <div class="layer">
+            <h3>Emotion detection </h3>
+            <p>This projects aims at detecting the emotions like happy,sad,anger etc". It is built using openCV and deep learning libraries</p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="sudoku.jpg" alt="">
+          <div class="layer">
+            <h3>Sudoku Solver</h3>
+            <p>A sudoku solver is built in c++ using backtracking algorithm.</p>
+            <a href="https://github.com/mishra-suchita/sudoku-solver"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">see more</a> -->
+    </div>
+  </div>
+  <!--contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-regular fa-envelope"></i> suchitamishra510@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 9335731230</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href=""></a>
+          </div>
+          <a href="suchitaResume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form  name='submit-to-google-sheet'>
+            <input type="text" name="name" placeholder="your name" required>
+            <input type="text" name="email" placeholder="your email" required>
+            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+
+    </div>
+    <!--copyright-->
+    <div class="copyright">
+      <p>copyright <i class="fa-regular fa-copyright"></i> Suchita</p>
+    </div>
+  </div>
+
+
+
+<script src="1.js"></script>
+</body>
+
+</html>
